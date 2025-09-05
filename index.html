@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Aroma</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <!------------------------------------------- Link Swiper para slider en Testimonios ---------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!------------------------------------------- Link de Secciones y Main ---------------------------------------------------------------------------->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/testimonios.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="container_logo">
+        <a href="#inicio"><img class="logo" src="assets/img/logo.png" alt="Logo"></a>
+      </div>
+
+      <div class="container-links" id="container-links">
+
+        <button id="close-menu" class="close">
+          <iconify-icon icon="mdi:close" width="32" height="32"></iconify-icon>
+        </button>
+
+        <ul class="nav_lists">
+          <li><a href="#nosotros" class="link">Nosotros</a></li>
+          <li><a href="#menu" class="link">Menú</a></li>
+          <li><a href="#testimonios" class="link">Testimonios</a></li>
+          <li><a href="#contacto" class="link">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="nav_reservas">
+          <a href="#contacto" class="reservas">Reservar</a>
+        </div>
+      <button id= "open-menu" class="open">
+        <iconify-icon icon="mdi:menu" width="32" height="32"></iconify-icon>
+      </button>
+    </nav>
+
+      <!-- ===== HERO / INICIO ===== -->
+    <section id="inicio">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Una experiencia <br> de café excepcional</h1>
+          <p>Disfruta de los mejores granos en un ambiente acogedor.</p>
+        </div>
+
+        <div class="hero-links">
+          <a href="#menu" class="btn-hero">Ver menú</a>
+          <a href="#contacto" class="btn-hero">Reservar</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section id="nosotros">
+    <div class="container-nosotros">
+      <div class="nosotros-objetivo">
+        <h2 class="seccion-titulo">¿Por qué elegirnos?</h2>
+        <p>En Café Aroma creemos que cada taza cuenta una historia. Fundados con la misión de ofrecer un café de calidad, seleccionamos granos premium y los preparamos con pasión en un ambiente cálido y acogedor. Nuestro compromiso es brindar no solo un excelente café, sino también un lugar donde cada visita se sienta única.</p>
+        <div class="container-beneficios">
+
+          <div class="card-beneficios">
+            <iconify-icon icon="bxs:coffee-bean"></iconify-icon>
+            <h4>Granos <br> seleccionados</h4>
+          </div>
+
+          <div class="card-beneficios">
+            <iconify-icon icon="mdi:sofa-single-outline"></iconify-icon>
+            <h4>Ambiente <br> acogedor</h4>
+          </div>
+
+          <div class="card-beneficios">
+            <iconify-icon icon="mdi:cupcake"></iconify-icon>
+            <h4>Deliciosos <br> postres</h4>
+          </div>
+
+        </div>
+      </div>
+      <div class="nosotros-img"></div>
+    </div>
+  </section>
+
+  <!-- ===== MENÚ ===== -->
+  <section id="menu">
+    <div class="menu-intro">
+      <h2 class="seccion-titulo">Nuestro Menú</h2>
+    </div>
+    <div class="container-menu">
+      <div class="menu-card">
+        <h3>Café</h3>
+        <ul>
+          <li><span>Espresso</span><span class="precio">$2.50</span></li>
+          <li><span>Americano</span><span class="precio">$3.00</span></li>
+          <li><span>Latte</span><span class="precio">$4.00</span></li>
+          <li><span>Cappuccino</span><span class="precio">$4.00</span></li>
+          <li><span>Macchiato</span><span class="precio">$4.00</span></li>
+          <li><span>Moca</span><span class="precio">$4.00</span></li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <h3>Pastelería</h3>
+        <ul>
+          <li><span>Croissant</span><span class="precio">$3.00</span></li>
+          <li><span>Muffin</span><span class="precio">$3.00</span></li>
+          <li><span>Brownie</span><span class="precio">$3.50</span></li>
+          <li><span>Tarta de Queso</span><span class="precio">$4.00</span></li>
+          <li><span>Tarta de Manzana</span><span class="precio">$4.00</span></li>
+          <li><span>Medialunas</span><span class="precio">$4.00</span></li>
+        </ul>
+      </div>
+       <div class="menu-card">
+        <h3>Especialidades</h3>
+        <ul>
+          <li><span>Affogato <br> <span class="card-sub">(helado con espresso)</span></span><span class="precio">$4.50</span></li>
+          <li><span>Latte con sabor <br><span class="card-sub">(vainilla, caramelo, avellana)</span></span><span class="precio">$4.50</span></li>
+          <li><span>Matcha Latte</span><span class="precio">$4.50</span></li>
+          <li><span>Chai Latte</span><span class="precio">$4.00</span></li>
+          <li><span>Cold Brew</span><span class="precio">$4.00</span></li>
+          <li><span>Frappé de café</span><span class="precio">$4.00</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reseñas ===== -->
+  <section id="testimonios">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <div class="container-testimonios">
+      <div class="slider-container swiper">
+        <div class="slider-wrapper">
+          <ul class="testimnios-list swiper-wrapper">
+            <li class="card-testimonios swiper-slide">
+              <img src="assets/img/usuario1.png" alt="Usuario 1">
+              <div class="estrellas">
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+              </div>
+              <h4>Juan Pérez</h4>
+              <p>El mejor café del centro, ambiente cálido y atención excelente. ¡Volveré!</p>
+            </li>
+            <li class="card-testimonios swiper-slide">
+              <img src="assets/img/usuario2.png" alt="Usuario 2">
+              <div class="estrellas">
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+              </div>
+              <h4>María López</h4>
+              <p>Siempre vuelvo por los postres caseros y el café de especialidad. ¡Recomendado!</p>
+            </li>
+            <li class="card-testimonios swiper-slide">
+              <img src="assets/img/usuario3.png" alt="Usuario 3">
+              <div class="estrellas">
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+              </div>
+              <h4>Carlos Gómez</h4>
+              <p>Buen lugar para trabajar y tomar un café tranquilo. El wifi es rápido.</p>
+            </li>
+            <li class="card-testimonios swiper-slide">
+              <img src="assets/img/usuario4.png" alt="Usuario 4">
+              <div class="estrellas">
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+              </div>
+              <h4>Lucía Fernández</h4>
+              <p>Me encantó la decoración y la variedad de cafés. ¡Muy recomendable!</p>
+            </li>
+            <li class="card-testimonios swiper-slide">
+              <img src="assets/img/usuario5.png" alt="Usuario 5">
+              <div class="estrellas">
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star" style="color: #f1d9b3;"></iconify-icon>
+                <iconify-icon icon="mdi:star-outline" style="color: #f1d9b3;"></iconify-icon>
+              </div>
+              <h4>Pedro Ruiz</h4>
+              <p>El café es bueno, pero podría haber más opciones de pastelería.</p>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto">
+    <h2 class="seccion-titulo">Contactanos</h2>
+      <div class="container-contacto">
+        <div class="contacto-info">
+          <h3>¡Estamos para ayudarte!</h3>
+          <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+          <div class="contacto-grid">
+            <div class="card-info">
+              <iconify-icon icon="mdi:phone"></iconify-icon>
+              <h4>Teléfono</h4>
+              <p>11 2345-6789</p>
+            </div>
+
+            <div class="card-info">
+              <iconify-icon icon="mdi:email"></iconify-icon> 
+              <h4>Email</h4>
+              <p>cafeaorma@gmail.com</p>
+            </div>
+
+            <div class="card-info">
+              <iconify-icon icon="mdi:map-marker"></iconify-icon> 
+              <h4>Ubicación</h4>
+              <p>Calle Falsa 123<br>Buenos Aires</p>
+            </div>
+
+            <div class="card-info">
+              <iconify-icon icon="mdi:clock-outline"></iconify-icon>
+              <h4>Horarios</h4>
+              <ul>
+                <li><strong>Lun - Vie:</strong> 8:00 - 21:00</li>
+                <li><strong>Sáb:</strong> 9:00 - 19:30</li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacto-social">
+            <span class="social-span">Síguenos en:</span>
+            <a href="#" aria-label="Instagram"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+            <a href="#" aria-label="Facebook"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+            <a href="#" aria-label="Twitter"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+          </div>
+        </div>
+
+        <div class="form-reservas-container">
+          <h3 class="reservas-subtitulo">Reservaciones</h3>
+          <form class="form-reservas" action="">
+            <div class="flex">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre:" required>
+              <input type="text" id="apellido" name="apellido" placeholder="Apellido:" required>
+            </div>
+            <input type="email" id="email" name="email" placeholder="Email:" required>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono:" required>
+            <input type="number" id="personas" name="personas" min="1" max="8" placeholder="Nro de personas:"required>
+            <div class="flex">
+              <input type="date" id="fecha" name="fecha" placeholder="Fecha:" required>
+              <input type="time" id="hora" name="hora" placeholder="Hora:" required>
+            </div>
+            <p class="aviso">El último turno disponible es media hora antes del cierre.</p>
+            <button type="submit">Reservar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container-mapa">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6568.046431166421!2d-58.412384217689414!3d-34.60357445543374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1755822974582!5m2!1ses-419!2sar" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+  <div class="footer-content">
+    <div class="footer-col footer-brand">
+      <img src="assets/img/logo.png" alt="Logo Café Aroma" class="footer-logo-img">
+      <p class="footer-desc">Disfruta de una experiencia única de café en el corazón de la ciudad.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><iconify-icon icon="mdi:map-marker"></iconify-icon> Calle Falsa 123, Buenos Aires</li>
+        <li><iconify-icon icon="mdi:phone"></iconify-icon> 11 2345-6789</li>
+        <li><iconify-icon icon="mdi:email"></iconify-icon> cafeaorma@gmail.com</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+        <a href="#" aria-label="Facebook"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+        <a href="#" aria-label="Twitter"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© Todos los derechos reservados. Café Aroma</p>
+  </div>
+</footer>
+  <!------------------------------------------- Script de Swiper ---------------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!------------------------------------------- Script general ---------------------------------------------------------------------------->
+  <script src="js/script.js"></script>
+</body>
+</html>

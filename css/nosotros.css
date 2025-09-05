@@ -1,0 +1,112 @@
+/*------------- SECCIÓN NOSOTROS -------------*/
+#nosotros {
+    background-image: url('../assets/img/fondo.png');
+}
+.container-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+}
+
+.nosotros-objetivo{
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 2rem;
+    text-align: center;
+}
+
+.nosotros-objetivo h2{
+    margin: 0 2rem;
+}
+
+.nosotros-objetivo p {
+    padding: 0 3rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--color_secundario);
+}
+
+.nosotros-img {
+    background-image: url('../assets/img/nosotros.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-beneficios{
+    display: flex;
+    justify-content: center;
+    gap: 3.8rem;
+    margin: 2rem 1rem 0 1rem;
+}
+.card-beneficios{
+    color: #fff;
+    display: flex;              /* Para manejar el contenido interno */
+    flex-direction: column;     
+    justify-content: center;    /* Centra el contenido verticalmente */
+    align-items: center;
+}
+.card-beneficios iconify-icon{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.card-beneficios h4{
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1024px){
+    .container-nosotros{
+        grid-template-columns: 1fr;
+    }
+    .nosotros-img{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .nosotros-objetivo{
+        padding: 4.5rem 0;
+    }
+    .nosotros-objetivo p {
+        font-size: 1.2rem;
+        padding: 0 3.5rem;
+    }
+    .container-beneficios{
+        gap: 2.7rem;
+    }
+    .card-beneficios h4{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 425px){
+    .nosotros-objetivo h2{
+        margin: 0 1.4rem;
+    }
+    .nosotros-objetivo p {
+        font-size: 1.1rem;
+    }
+    .container-beneficios{
+        gap: 2.3rem;
+        margin: 2rem 0.5rem 0 0.5rem;
+    }
+
+    .card-beneficios h4{
+        font-size: 1rem;
+    }
+    .card-beneficios iconify-icon{
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 375px){
+    .nosotros-objetivo p {
+        padding: 0 2.5rem;
+    }
+    .container-beneficios{
+        margin: 1.5rem 0.3rem 0 0.3rem;
+    }
+
+    .card-beneficios h4{
+        font-size: 0.8rem;
+    }
+    .card-beneficios iconify-icon{
+        font-size: 2.2rem;
+    }
+}

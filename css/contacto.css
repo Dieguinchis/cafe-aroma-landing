@@ -1,0 +1,280 @@
+#contacto{
+    padding: 4.5rem 6rem;
+    background-color: #0a0501;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-info h3{
+    text-align: center;
+    font-size: 2.45rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--color_secundario);
+    font-weight: 600;
+}
+.contacto-info p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #d1d1d1;
+}
+
+.contacto-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    text-align: center;
+    align-items: stretch; /* Las columnas se estiran todas al mismo alto */
+}
+
+.card-info{
+    padding: 1rem 0.7rem;
+    border-radius: 0.3rem;
+    border: var(--color_primario) 2px solid;
+    color: var(--color_primario);
+    background-color: var(--color_secundario);
+    display: flex;              /* Para manejar el contenido interno */
+    flex-direction: column;     
+    justify-content: center;    /* Centra el contenido verticalmente */
+    align-items: center;
+    height: 100%;               /* Ocupa todo el alto disponible */
+    box-shadow: 0 4px 18px 0 rgba(78,44,23,0.13);
+    transition: all 0.3s ease;
+}
+.card-info:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(78,44,23,0.18);
+}
+
+.card-info iconify-icon{
+    font-size: 2rem;
+}
+
+.card-info h4{
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.card-info ul li, .card-info p{
+    font-size: 1.05rem;
+    list-style: none;
+    color: var(--color_primario);
+    text-align: center;
+}
+
+.contacto-social{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.05rem;
+    color: var(--color_secundario);
+    border-top: 1px solid #dadada;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+.contacto-social iconify-icon {
+    color: var(--color_secundario);
+    background: var(--color_primario);
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+.contacto-social a:hover iconify-icon {
+    background: var(--color_secundario);
+    color: var(--color_primario);
+}
+.social-span{
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.05rem;
+    color: var(--color_secundario);
+}
+.container-mapa{
+    margin-top: 2.5rem;
+}
+.mapa{
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+/*-------------------------------- Formulario de Reservas ----------------------------------------------*/
+
+.form-reservas-container{
+    border: 2px solid var(--color_secundario);
+    box-shadow: 0 4px 18px 0 rgba(78,44,23,0.13);
+    background-color: #110c07;
+    padding: 2.5rem 2rem;
+    border-radius: 0.7rem;
+}
+
+.form-reservas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.reservas-subtitulo{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: 1px;
+    color: var(--color_secundario);
+    font-weight: 600;
+}
+
+.flex{
+    display: flex;
+    gap: 0.75rem;
+}
+
+.form-reservas input,
+.form-reservas select {
+    padding: 0.8rem 0.95rem;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 0.375rem;
+    margin-bottom: 0.25rem;
+    width: 100%;
+    background: rgba(255,255,255,0.03);
+    color: #dadada;
+    transition: box-shadow 180ms ease, transform 160ms ease, border-color 160ms ease;
+}
+.form-reservas input:focus,
+.form-reservas select:focus{
+    outline: none;
+    box-shadow: 0 6px 20px rgba(78,44,23,0.18);
+    border-color: var(--color_primario);
+    transform: translateY(-1px);
+    color: #fff;
+}
+
+.form-reservas input::placeholder,
+.form-reservas select::placeholder{
+    color: #858483;
+}
+
+.form-reservas select option{
+    background-color: #110c07;
+    color: #dadada;
+}
+
+.form-reservas button{
+    background-color: var(--color_primario);
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: var(--color_primario) solid 2px;
+}
+.form-reservas button:hover{
+    background-color: var(--color_secundario);
+    color: var(--color_primario);
+    transform: scale(1.035);
+}
+
+.aviso{
+    font-size: 0.95rem;
+    color: var(--color_secundario);
+    margin: 0.35rem 0;
+    text-align: center;
+}
+
+@media (max-width: 1024px){
+    #contacto{
+        padding: 4.5rem 4rem;
+    }
+    .container-contacto{
+        gap: 2.3rem;
+    }
+
+    .card-info h4{
+        font-size: 1.15rem;
+    }
+    
+    .card-info ul li, .card-info p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .container-contacto{
+        grid-template-columns: 1fr;
+    }
+    .contacto-info h3{
+        font-size: 2rem;
+    }
+    .contacto-info p{
+        font-size: 1.1rem;
+    }
+
+    .contacto-grid{
+        gap: 0.7rem;
+    }
+    .card-info {
+        margin-top: 0.8rem;
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    .card-info iconify-icon {
+        background: var(--color_primario);
+        color: var(--color_secundario);
+        border-radius: 0.4rem;
+        padding: 0.5rem;
+        transition: all 0.2s ease;
+    }
+    .card-info:hover iconify-icon {
+        background: var(--color_secundario);
+        color: var(--color_primario);
+    }
+    .card-info h4, .card-info ul li, .card-info p {
+        color: var(--color_secundario);
+    }
+}
+
+@media (max-width: 475px){
+    #contacto{
+        padding: 4.5rem 3rem;
+    }
+    .flex{
+        flex-direction: column;
+    }
+}
+@media (max-width: 375px){
+    #contacto{
+        padding: 4.5rem 1.5rem;
+    }
+
+    .card-info h4{
+        font-size: 1rem;
+    }
+
+    .card-info ul li, .card-info p{
+        font-size: 0.8rem;
+    }
+
+    .social-span{
+        font-size: 0.9rem;
+    }
+    .reservas-subtitulo{
+        font-size: 1.8rem;
+    }
+}
