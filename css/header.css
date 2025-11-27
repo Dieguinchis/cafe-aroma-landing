@@ -196,14 +196,6 @@ header{
         display: none;
     }
 
-    .hero-container {
-        margin: 0;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-    }
     .hero-container{
         margin: 9.5rem 3rem;
     }
