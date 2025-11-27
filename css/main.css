@@ -41,6 +41,26 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color_secundario) #110c07;
+}
+
+body {
+  /* Oculta la barra de scroll en Chrome/Safari */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color_secundario) #110c07;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #110c07;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--color_secundario);
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-track {
+  background: #110c07;
 }
 
 *{
